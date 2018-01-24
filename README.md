@@ -7,7 +7,7 @@
 
 ## Introduction
 
-In this lab, we'll be working with the [Twitter API](https://dev.twitter.com/docs/api/1.1). In order to interact with this API, Twitter requires that we sign up for an API key.
+In this lab, we'll be working with the [Twitter API](https://developer.twitter.com/en/docs/api-reference-index). In order to interact with this API, Twitter requires that we sign up for an API key.
 
 **Note that the results of the test suite for this lab is based on the [VCR Fixtures](https://github.com/vcr/vcr) in `spec/vcr/twitter`**
 
