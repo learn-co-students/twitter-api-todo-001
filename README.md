@@ -1,3 +1,5 @@
+_**NOTE**: As of September 2018, Twitter has changed the way applications must register and work with their API. This documentation, while sufficient to guide, does require the student to do much more work and puzzling out than is appropriate. While the work was formerly bonus, it's not **really**-bonus. Nevertheless, this is an excellent preparation for what it's like to work as a developer and find out that registration processes and authentication processes have changed. This lab will be removed in the next major release of the Flatiron Curriculum until rewritten._
+
 # Twitter API Lab
 
 ## Objectives
