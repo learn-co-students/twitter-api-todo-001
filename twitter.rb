@@ -1,5 +1,6 @@
 require 'twitter'
 require 'yaml'
+require 'pry'
 
 class TwitterApi
   attr_reader :client
@@ -17,23 +18,38 @@ class TwitterApi
 
   def most_recent_friend
     #find the twitter gem method that retrieves a user's friends and grab the most recent friend
+    # binding.pry
+    client.friends.each do |friend|
+      # binding.pry
+      return friend
+    end
   end
 
   def find_user_for(username)
     #find the twitter gem method that returns the correct user, given a username
+    client.user(username)
   end
 
   def find_followers_for(username)
+    follower_array = []
     #find the twitter gem method that returns the follows of a given user
+    client.followers(username).collect do |follower|
+      # binding.pry
+      follower_array << follower
+      if follower_array.length == 10
+        return follower_array
+      end
+    end
   end
 
   def homepage_timeline
     #find the twitter gem method that retreives the tweets from a user's timeline.
+    client.home_timeline
   end
-  
+
 end
 
-#Bonus: 
+#Bonus:
 
 # uncomment out the following and read the bonus instructions.
 # remember to comment out the WebMock line of your spec_helper, as the instructions dictate.
